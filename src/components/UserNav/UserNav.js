@@ -50,6 +50,14 @@ const UserNav = props => {
       ...listingTab(listing, selectedPageName),
     },
     {
+      text: <FormattedMessage id="UserNav.contactDetailsPage" />,
+      selected: selectedPageName === 'ManageListingsPage',
+      disabled: false,
+      linkProps: {
+        name: 'ManageListingsPage',
+      },
+    },
+    {
       text: <FormattedMessage id="UserNav.profileSettingsPage" />,
       selected: selectedPageName === 'ProfileSettingsPage',
       disabled: false,
@@ -65,14 +73,7 @@ const UserNav = props => {
         name: 'ContactDetailsPage',
       },
     },
-    {
-      text: <FormattedMessage id="UserNav.contactDetailsPage" />,
-      selected: ACCOUNT_SETTINGS_PAGES.includes(selectedPageName),
-      disabled: false,
-      linkProps: {
-        name: 'ManageListingsPage',
-      },
-    },
+    
   ];
 
   return (
