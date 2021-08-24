@@ -12,6 +12,7 @@ import {
   SectionHero,
   SectionHowItWorks,
   SectionLocations,
+  SectionYe,
   LayoutSingleColumn,
   LayoutWrapperTopbar,
   LayoutWrapperMain,
@@ -20,8 +21,8 @@ import {
 } from '../../components';
 import { TopbarContainer } from '../../containers';
 
-import facebookImage from '../../assets/yogatimeFacebook-1200x630.jpg';
-import twitterImage from '../../assets/yogatimeTwitter-600x314.jpg';
+import facebookImage from '../../assets/RentlistFacebook-1200x630.jpg';
+import twitterImage from '../../assets/RentlistTwitter-600x314.jpg';
 import css from './LandingPage.module.css';
 
 export const LandingPageComponent = props => {
@@ -74,10 +75,22 @@ export const LandingPageComponent = props => {
               <div className={css.sectionContentFirstChild}>
                 <SectionLocations />
               </div>
+
             </li>
+
             <li className={css.section}>
               <div className={css.sectionContent}>
                 <SectionHowItWorks
+                  currentUserListing={currentUserListing}
+                  currentUserListingFetched={currentUserListingFetched}
+                />
+                
+                
+              </div>
+            </li>
+            <li className={css.section}>
+              <div className={css.sectionContentInitial}>
+                <SectionYe
                   currentUserListing={currentUserListing}
                   currentUserListingFetched={currentUserListingFetched}
                 />

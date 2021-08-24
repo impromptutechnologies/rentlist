@@ -7,7 +7,7 @@ import { OwnListingLink } from '../../components';
 
 import css from './SectionHowItWorks.module.css';
 
-const SectionTwoSided = props => {
+const SectionYe = props => {
   const { rootClassName, className, currentUserListing, currentUserListingFetched } = props;
   const classes = classNames(rootClassName || css.root, className);
   return (
@@ -52,21 +52,22 @@ const SectionTwoSided = props => {
         </OwnListingLink>
       </div>
     </div>
+      
   );
 };
 
-SectionTwoSided.defaultProps = {
+SectionYe.defaultProps = {
   rootClassName: null,
   className: null,
   currentUserListing: null,
   currentUserListingFetched: false,
 };
 
-SectionTwoSided.propTypes = {
+SectionYe.propTypes = {
   rootClassName: string,
   className: string,
   currentUserListing: propTypes.ownListing,
   currentUserListingFetched: bool,
 };
 
-export default SectionTwoSided;
+export default SectionYe;

@@ -78,7 +78,7 @@ export const EditListingPageComponent = props => {
     page,
     params,
     scrollingDisabled,
-    allowOnlyOneListing,
+    //allowOnlyOneListing,
     stripeAccountFetched,
     stripeAccount,
     updateStripeAccountError,
@@ -126,7 +126,7 @@ export const EditListingPageComponent = props => {
         };
 
     return <NamedRedirect {...redirectProps} />;
-  } else if (allowOnlyOneListing && isNewURI && currentUserListingFetched && currentUserListing) {
+  } else if (/*allowOnlyOneListing &&*/ isNewURI && currentUserListingFetched && currentUserListing) {
     // If we allow only one listing per provider, we need to redirect to correct listing.
     return (
       <NamedRedirect

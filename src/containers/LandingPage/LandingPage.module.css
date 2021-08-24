@@ -67,6 +67,7 @@
 }
 
 .sectionContent {
+  
   margin: var(--LandingPage_sectionMarginTop) 24px 51px 24px;
 
   @media (--viewportMedium) {
@@ -84,11 +85,17 @@
     max-width: 1056px;
     padding: 0;
   }
+
 }
 
 .sectionContentFirstChild {
   composes: sectionContent;
   margin-top: 3vh;
+}
+
+.sectionContentInitial {
+  composes: sectionContent;
+  margin-top:0;
 }
 
 /* A bar on top of light sections */

@@ -1,6 +1,6 @@
 {
-  "name": "Yogatime",
-  "short_name": "Yogatime",
+  "name": "Rentlist",
+  "short_name": "Rentlist",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#0095b3",
