@@ -112,7 +112,7 @@ const routeConfiguration = () => {
       ),
     },
     {
-      path: '/l/:slug/:id/manage',
+      path: '/l/manage',
       name: 'ManageListingsPage',
       auth: true,
       component: ManageListingsPage,
