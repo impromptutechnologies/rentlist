@@ -11,6 +11,7 @@ import { getListingType, createSlug } from '../../util/urlHelpers';
 import css from './UserNav.module.css';
 
 const listingTab = (listing, selectedPageName) => {
+  console.log(listing, selectedPageName)
   if (!listing) {
     return {
       text: <FormattedMessage id="UserNav.newListing" />,
@@ -27,7 +28,7 @@ const listingTab = (listing, selectedPageName) => {
   const isDraft = state === LISTING_STATE_DRAFT;
 
   return {
-    /*text: <FormattedMessage id="UserNav.editListing" />,
+    text: <FormattedMessage id="UserNav.editListing" />,
     selected: selectedPageName === 'EditListingPage',
     linkProps: {
       name: 'EditListingPage',
@@ -37,12 +38,12 @@ const listingTab = (listing, selectedPageName) => {
         type: getListingType(isDraft),
         tab: 'photos',
       },
-    },*/
+    },/*
     text: <FormattedMessage id="UserNav.newListing" />,
       selected: selectedPageName === 'NewListingPage',
       linkProps: {
         name: 'NewListingPage',
-      },
+      },*/
   };
 };
 
