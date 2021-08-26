@@ -117,6 +117,26 @@ export const filters = [
     },
   },
   {
+    id: 'category',
+    label: 'category',
+    type: 'SelectSingleFilter',
+    group: 'secondary',
+    queryParamNames: ['pub_category'],
+    config: {
+      options: [
+        { key: 'home', label: 'Home' },
+        { key: 'swimmingpool', label: 'Swimming Pool' },
+        { key: 'garden', label: 'Garden/Backyard' },
+        { key: 'pspace', label: 'Parking Space' },
+        { key: 'restaurant', label: 'Restaurant/Bar' },
+        { key: 'venue', label: 'Entertainment Venue' },
+        { key: 'facility', label: 'Sports/Facilities' },
+        { key: 'lot', label: 'Private Lot' },
+        { key: 'others', label: 'Others' },
+      ],
+    },
+  },
+  {
     id: 'certificate',
     label: 'Certificate',
     type: 'SelectSingleFilter',

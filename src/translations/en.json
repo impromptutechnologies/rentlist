@@ -195,7 +195,7 @@
   "EditListingAvailabilityPanel.dayOfWeek.thu": "Thursday",
   "EditListingAvailabilityPanel.dayOfWeek.tue": "Tuesday",
   "EditListingAvailabilityPanel.dayOfWeek.wed": "Wednesday",
-  "EditListingAvailabilityPanel.defaultScheduleTitle": "Default schedule",
+  "EditListingAvailabilityPanel.defaultScheduleTitle": "Default schedule (Min 1 Day)",
   "EditListingAvailabilityPanel.edit": "Edit",
   "EditListingAvailabilityPanel.exceptionAvailable": "Available",
   "EditListingAvailabilityPanel.exceptionNotAvailable": "Not available",

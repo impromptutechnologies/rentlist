@@ -107,7 +107,7 @@ const tabCompleted = (tab, listing) => {
     case PRICING:
       return !!price;
     case AVAILABILITY:
-      return !!availabilityPlan && availabilityPlan.entries.length > 1;
+      return !!availabilityPlan && availabilityPlan.entries.length > 0;
     case PHOTOS:
       return images && images.length > 0;
     default:
