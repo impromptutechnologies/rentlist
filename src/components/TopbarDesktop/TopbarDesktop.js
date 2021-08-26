@@ -92,13 +92,24 @@ const TopbarDesktop = props => {
             <div>
               <span className={css.menuItemBorder} />
               {currentUserListing ? (
-                <FormattedMessage id="TopbarDesktop.addYourListingLink" />
+                <FormattedMessage id="TopbarDesktop.editYourListingLink" />
               ) : (
                 <FormattedMessage id="TopbarDesktop.addYourListingLink" />
               )}
             </div>
           </OwnListingLink>
         </MenuItem>
+        
+        <MenuItem key="EditListingPage">
+          <NamedLink
+            className={classNames(css.createListingLink, currentPageClass('EditListingsPage'))}
+            name="NewListingPage"
+          >
+            <span className={css.menuItemBorder} />
+            <FormattedMessage id="UserNav.newListing" />
+          </NamedLink>
+        </MenuItem>
+
         <MenuItem key="ProfileSettingsPage">
           <NamedLink
             className={classNames(css.profileSettingsLink, currentPageClass('ProfileSettingsPage'))}
