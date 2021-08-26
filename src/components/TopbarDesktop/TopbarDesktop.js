@@ -92,7 +92,7 @@ const TopbarDesktop = props => {
             <div>
               <span className={css.menuItemBorder} />
               {currentUserListing ? (
-                <FormattedMessage id="TopbarDesktop.editYourListingLink" />
+                <FormattedMessage id="TopbarDesktop.addYourListingLink" />
               ) : (
                 <FormattedMessage id="TopbarDesktop.addYourListingLink" />
               )}
