@@ -27,7 +27,7 @@ const listingTab = (listing, selectedPageName) => {
   const isDraft = state === LISTING_STATE_DRAFT;
 
   return {
-    text: <FormattedMessage id="UserNav.editListing" />,
+    /*text: <FormattedMessage id="UserNav.editListing" />,
     selected: selectedPageName === 'EditListingPage',
     linkProps: {
       name: 'EditListingPage',
@@ -37,7 +37,12 @@ const listingTab = (listing, selectedPageName) => {
         type: getListingType(isDraft),
         tab: 'photos',
       },
-    },
+    },*/
+    text: <FormattedMessage id="UserNav.newListing" />,
+      selected: selectedPageName === 'NewListingPage',
+      linkProps: {
+        name: 'NewListingPage',
+      },
   };
 };
 
