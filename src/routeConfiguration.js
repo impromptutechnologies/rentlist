@@ -124,7 +124,7 @@ const routeConfiguration = () => {
       name: 'EditListingPage',
       auth: true,
       component: EditListingPage,
-      //extraProps: { allowOnlyOneListing: false },
+      extraProps: { allowOnlyOneListing: false },
       loadData: pageDataLoadingAPI.EditListingPage.loadData,
     },
     {
