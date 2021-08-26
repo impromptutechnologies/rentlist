@@ -49,7 +49,7 @@ const EditListingFeaturesPanel = props => {
 
   const yogaStyles = publicData && publicData.yogaStyles;
   const category = publicData && publicData.category;
-  const initialValues = { yogaStyles };
+  const initialValues = { yogaStyles, category };
 
   return (
     <div className={classes}>

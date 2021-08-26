@@ -94,7 +94,7 @@ export const filters = [
   {
     id: 'yogaStyles',
     label: 'Yoga styles',
-    type: 'SelectMultipleFilter',
+    type: 'SelectSingleFilter',
     group: 'secondary',
     queryParamNames: ['pub_yogaStyles'],
     config: {
