@@ -99,14 +99,14 @@ const TopbarDesktop = props => {
             </div>
           </OwnListingLink>
         </MenuItem>
-        
+
         <MenuItem key="EditListingPage">
           <NamedLink
             className={classNames(css.createListingLink, currentPageClass('EditListingsPage'))}
             name="NewListingPage"
           >
             <span className={css.menuItemBorder} />
-            <FormattedMessage id="UserNav.newListing" />
+            <FormattedMessage id="TopbarDesktop.addYourListingLink" />
           </NamedLink>
         </MenuItem>
 
