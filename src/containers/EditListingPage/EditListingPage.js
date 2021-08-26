@@ -78,7 +78,7 @@ export const EditListingPageComponent = props => {
     page,
     params,
     scrollingDisabled,
-    //allowOnlyOneListing,
+    allowOnlyOneListing,
     stripeAccountFetched,
     stripeAccount,
     updateStripeAccountError,
