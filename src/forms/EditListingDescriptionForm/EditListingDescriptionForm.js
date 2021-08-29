@@ -108,14 +108,6 @@ const EditListingDescriptionFormComponent = props => (
             placeholder={descriptionPlaceholderMessage}
             validate={composeValidators(required(descriptionRequiredMessage))}
           />
-
-          <CustomCertificateSelectFieldMaybe
-            id="certificate"
-            name="certificate"
-            certificateOptions={certificateOptions}
-            intl={intl}
-          />
-
           <Button
             className={css.submitButton}
             type="submit"
@@ -131,6 +123,13 @@ const EditListingDescriptionFormComponent = props => (
   />
 );
 
+/*<CustomCertificateSelectFieldMaybe
+            id="certificate"
+            name="certificate"
+            certificateOptions={certificateOptions}
+            intl={intl}
+          />
+*/
 EditListingDescriptionFormComponent.defaultProps = { className: null, fetchErrors: null };
 
 EditListingDescriptionFormComponent.propTypes = {

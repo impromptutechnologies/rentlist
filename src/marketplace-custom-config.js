@@ -136,7 +136,7 @@ export const filters = [
       ],
     },
   },
-  {
+  /*{
     id: 'certificate',
     label: 'Certificate',
     type: 'SelectSingleFilter',
@@ -153,7 +153,7 @@ export const filters = [
         { key: '500h', label: 'Registered yoga teacher 500h' },
       ],
     },
-  },
+  },*/
 ];
 
 export const sortConfig = {

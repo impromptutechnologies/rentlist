@@ -102,7 +102,7 @@ const TopbarDesktop = props => {
 
         <MenuItem key="EditListingPage">
           <NamedLink
-            className={classNames(css.createListingLink, currentPageClass('EditListingsPage'))}
+            className={classNames(css.yourListingsLink, currentPageClass('EditListingsPage'))}
             name="NewListingPage"
           >
             <span className={css.menuItemBorder} />
