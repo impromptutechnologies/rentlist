@@ -18,7 +18,7 @@ const EditListingDescriptionFormComponent = props => (
     {...props}
     render={formRenderProps => {
       const {
-        certificateOptions,
+        //certificateOptions,
         className,
         disabled,
         ready,
@@ -55,6 +55,17 @@ const EditListingDescriptionFormComponent = props => (
       const maxLength60Message = maxLength(maxLengthMessage, TITLE_MAX_LENGTH);
       const descriptionRequiredMessage = intl.formatMessage({
         id: 'EditListingDescriptionForm.descriptionRequired',
+      });
+
+      const instructionsMessage = intl.formatMessage({
+        id: 'EditListingDescriptionForm.instructions',
+      });
+      const instructionsPlaceholderMessage = intl.formatMessage({
+        id: 'EditListingDescriptionForm.instructionsPlaceholder',
+      });
+      const maxLength60Message = maxLength(maxLengthMessage, TITLE_MAX_LENGTH);
+      const instructionsRequiredMessage = intl.formatMessage({
+        id: 'EditListingDescriptionForm.instructionsRequired',
       });
 
       const { updateListingError, createListingDraftError, showListingsError } = fetchErrors || {};
@@ -100,13 +111,23 @@ const EditListingDescriptionFormComponent = props => (
           />
 
           <FieldTextInput
-            id="description"
-            name="description"
+            id="instructions"
+            name="instructions"
             className={css.description}
             type="textarea"
             label={descriptionMessage}
             placeholder={descriptionPlaceholderMessage}
             validate={composeValidators(required(descriptionRequiredMessage))}
+          />
+
+          <FieldTextInput
+            id="description"
+            name="description"
+            className={css.description}
+            type="textarea"
+            label={instructionsMessage}
+            placeholder={instructionsPlaceholderMessage}
+            validate={composeValidators(required(instructionsRequiredMessage))}
           />
           <Button
             className={css.submitButton}

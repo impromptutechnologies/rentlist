@@ -223,7 +223,9 @@
   "EditListingDescriptionForm.createListingDraftError": "Failed to create a draft. Please try again.",
   "EditListingDescriptionForm.description": "Describe your listing",
   "EditListingDescriptionForm.descriptionPlaceholder": "What kind of a listing is this? What is included in your listing?",
-
+  "EditListingDescriptionForm.instructions": "Instructions to access listing",
+  "EditListingDescriptionForm.instructionsPlaceholder": "Call me when you get there or The keypad ",
+  "EditListingDescriptionForm.instructionsRequired": "Instructions is required.",
   "EditListingDescriptionForm.descriptionRequired": "A description is required.",
   "EditListingDescriptionForm.maxLength": "Must be {maxLength} characters or less",
   "EditListingDescriptionForm.showListingFailed": "Fetching listing data failed",

@@ -244,6 +244,7 @@ export class ListingPageComponent extends Component {
 
     const {
       description = '',
+      instructions = '',
       geolocation = null,
       price = null,
       title = '',
@@ -383,8 +384,8 @@ export class ListingPageComponent extends Component {
       </NamedLink>
     );
 
-    const yogaStylesOptions = findOptionsForSelectFilter('yogaStyles', filterConfig);
-    const certificateOptions = findOptionsForSelectFilter('certificate', filterConfig);
+    const yogaStylesOptions = findOptionsForSelectFilter('category', filterConfig);
+    //const certificateOptions = findOptionsForSelectFilter('certificate', filterConfig);
 
     return (
       <Page
@@ -429,13 +430,14 @@ export class ListingPageComponent extends Component {
                     priceTitle={priceTitle}
                     formattedPrice={formattedPrice}
                     richTitle={richTitle}
-                    listingCertificate={publicData ? publicData.certificate : null}
-                    certificateOptions={certificateOptions}
+                    //listingCertificate={publicData ? publicData.certificate : null}
+                    //certificateOptions={certificateOptions}
                     hostLink={hostLink}
                     showContactUser={showContactUser}
                     onContactUser={this.onContactUser}
                   />
                   <SectionDescriptionMaybe description={description} />
+                  <SectionDescriptionMaybe instructions={instructions} />
                   <SectionFeaturesMaybe options={yogaStylesOptions} publicData={publicData} />
                   <SectionMapMaybe
                     geolocation={geolocation}
