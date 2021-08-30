@@ -49,16 +49,16 @@ const EditListingFeaturesFormComponent = props => (
         </p>
       ) : null;
 
-      const options = findOptionsForSelectFilter('yogaStyles', filterConfig);
+      //const options = findOptionsForSelectFilter('yogaStyles', filterConfig);
 
       const categoryKey = 'category';
       const categoryOptions = findOptionsForSelectFilter(categoryKey, filterConfig);
-    /*          <FieldCheckboxGroup className={css.features} id={name} name={name} options={options} label={"YogaStyles"}/>
-*/
+    
       return (
         <Form className={classes} onSubmit={handleSubmit}>
           {errorMessage}
           {errorMessageShowListing}
+
 
           <FieldSelect className={css.features} name={categoryKey} id={categoryKey} label={'Category'}>
             {categoryOptions.map(o => (
