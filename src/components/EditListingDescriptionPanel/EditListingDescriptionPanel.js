@@ -29,7 +29,7 @@ const EditListingDescriptionPanel = props => {
   const classes = classNames(rootClassName || css.root, className);
   const currentListing = ensureOwnListing(listing);
   const { description, instructions, title, publicData } = currentListing.attributes;
-  console.log(instructions)
+  console.log(description, instructions, title, publicData)
   const isPublished = currentListing.id && currentListing.attributes.state !== LISTING_STATE_DRAFT;
   const panelTitle = isPublished ? (
     <FormattedMessage
@@ -48,6 +48,7 @@ const EditListingDescriptionPanel = props => {
 
   //const certificateOptions = findOptionsForSelectFilter('certificate', config.custom.filters);
   //certificate: publicData.certificate,
+  
   return (
     <div className={classes}>
       <h1 className={css.title}>{panelTitle}</h1>
