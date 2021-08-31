@@ -63,7 +63,6 @@ const EditListingDescriptionFormComponent = props => (
       const instructionsPlaceholderMessage = intl.formatMessage({
         id: 'EditListingDescriptionForm.instructionsPlaceholder',
       });
-      const maxLength60Message = maxLength(maxLengthMessage, TITLE_MAX_LENGTH);
       const instructionsRequiredMessage = intl.formatMessage({
         id: 'EditListingDescriptionForm.instructionsRequired',
       });
