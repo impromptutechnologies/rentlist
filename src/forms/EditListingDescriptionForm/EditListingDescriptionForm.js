@@ -57,7 +57,7 @@ const EditListingDescriptionFormComponent = props => (
         id: 'EditListingDescriptionForm.descriptionRequired',
       });
 
-      const instructionsMessage = intl.formatMessage({
+      /*const instructionsMessage = intl.formatMessage({
         id: 'EditListingDescriptionForm.instructions',
       });
       const instructionsPlaceholderMessage = intl.formatMessage({
@@ -66,6 +66,16 @@ const EditListingDescriptionFormComponent = props => (
       const instructionsRequiredMessage = intl.formatMessage({
         id: 'EditListingDescriptionForm.instructionsRequired',
       });
+
+      <FieldTextInput
+            id="instructions"
+            name="instructions"
+            className={css.description}
+            type="textarea"
+            label={instructionsMessage}
+            placeholder={instructionsPlaceholderMessage}
+            validate={composeValidators(required(instructionsRequiredMessage))}
+          />*/
 
       const { updateListingError, createListingDraftError, showListingsError } = fetchErrors || {};
       const errorMessageUpdateListing = updateListingError ? (
@@ -119,15 +129,7 @@ const EditListingDescriptionFormComponent = props => (
             validate={composeValidators(required(descriptionRequiredMessage))}
           />
 
-          <FieldTextInput
-            id="instructions"
-            name="instructions"
-            className={css.description}
-            type="textarea"
-            label={instructionsMessage}
-            placeholder={instructionsPlaceholderMessage}
-            validate={composeValidators(required(instructionsRequiredMessage))}
-          />
+        
           <Button
             className={css.submitButton}
             type="submit"

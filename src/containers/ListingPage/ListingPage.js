@@ -244,7 +244,7 @@ export class ListingPageComponent extends Component {
 
     const {
       description = '',
-      instructions = '',
+      //instructions = '',
       geolocation = null,
       price = null,
       title = '',
@@ -437,7 +437,6 @@ export class ListingPageComponent extends Component {
                     onContactUser={this.onContactUser}
                   />
                   <SectionDescriptionMaybe description={description} />
-                  <SectionDescriptionMaybe instructions={instructions} />
                   <SectionFeaturesMaybe options={yogaStylesOptions} publicData={publicData} />
                   <SectionMapMaybe
                     geolocation={geolocation}
