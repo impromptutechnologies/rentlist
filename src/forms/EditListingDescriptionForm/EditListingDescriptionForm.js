@@ -111,8 +111,8 @@ const EditListingDescriptionFormComponent = props => (
           />
 
           <FieldTextInput
-            id="instructions"
-            name="instructions"
+            id="description"
+            name="description"
             className={css.description}
             type="textarea"
             label={descriptionMessage}
@@ -121,8 +121,8 @@ const EditListingDescriptionFormComponent = props => (
           />
 
           <FieldTextInput
-            id="description"
-            name="description"
+            id="instructions"
+            name="instructions"
             className={css.description}
             type="textarea"
             label={instructionsMessage}
