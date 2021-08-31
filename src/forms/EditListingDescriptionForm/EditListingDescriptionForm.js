@@ -166,12 +166,12 @@ EditListingDescriptionFormComponent.propTypes = {
     showListingsError: propTypes.error,
     updateListingError: propTypes.error,
   }),
-  certificateOptions: arrayOf(
+  /*certificateOptions: arrayOf(
     shape({
       key: string.isRequired,
       label: string.isRequired,
     })
-  ),
+  ),*/
 };
 
 export default compose(injectIntl)(EditListingDescriptionFormComponent);

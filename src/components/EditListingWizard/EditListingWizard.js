@@ -91,13 +91,14 @@ const tabCompleted = (tab, listing) => {
     geolocation,
     price,
     title,
+    instructions,
     publicData,
   } = listing.attributes;
   const images = listing.images;
 
   switch (tab) {
     case DESCRIPTION:
-      return !!(description && title);
+      return !!(description && title && instructions);
     case FEATURES:
       return !!(publicData && publicData.category);
     case POLICY:
