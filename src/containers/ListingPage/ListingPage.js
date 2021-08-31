@@ -58,6 +58,7 @@ import SectionFeaturesMaybe from './SectionFeaturesMaybe';
 import SectionReviews from './SectionReviews';
 import SectionMapMaybe from './SectionMapMaybe';
 import css from './ListingPage.module.css';
+import SectionCategoryMaybe from './SectionCategoryMaybe';
 
 const MIN_LENGTH_FOR_LONG_WORDS_IN_TITLE = 16;
 
@@ -384,7 +385,10 @@ export class ListingPageComponent extends Component {
       </NamedLink>
     );
 
-    const yogaStylesOptions = findOptionsForSelectFilter('category', filterConfig);
+    const categoryOptions = findOptionsForSelectFilter('category', filterConfig);
+    //const viewOptions = findOptionsForSelectFilter('view', filterConfig);
+      //                  <SectionFeaturesMaybe options={yogaStylesOptions} publicData={publicData} />
+
     //const certificateOptions = findOptionsForSelectFilter('certificate', filterConfig);
 
     return (
@@ -436,8 +440,8 @@ export class ListingPageComponent extends Component {
                     showContactUser={showContactUser}
                     onContactUser={this.onContactUser}
                   />
+                  <SectionCategoryMaybe options={categoryOptions} publicData={publicData} />
                   <SectionDescriptionMaybe description={description} />
-                  <SectionFeaturesMaybe options={yogaStylesOptions} publicData={publicData} />
                   <SectionMapMaybe
                     geolocation={geolocation}
                     publicData={publicData}
