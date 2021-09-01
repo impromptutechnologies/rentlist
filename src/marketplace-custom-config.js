@@ -82,7 +82,7 @@ export const filters = [
     id: 'keyword',
     label: 'Keyword',
     type: 'KeywordFilter',
-    group: 'primary',
+    group: 'secondary',
     // Note: KeywordFilter is fixed filter,
     // you can't change "queryParamNames: ['keywords'],"
     queryParamNames: ['keywords'],
@@ -118,9 +118,9 @@ export const filters = [
   },*/
   {
     id: 'category',
-    label: 'category',
+    label: 'Category',
     type: 'SelectSingleFilter',
-    group: 'secondary',
+    group: 'primary',
     queryParamNames: ['pub_category'],
     config: {
       options: [
