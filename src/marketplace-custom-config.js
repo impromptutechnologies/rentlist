@@ -124,9 +124,9 @@ export const filters = [
     queryParamNames: ['pub_category'],
     config: {
       options: [
+        { key: 'garden', label: 'Garden/Backyard' },
         { key: 'home', label: 'Home' },
         { key: 'swimmingpool', label: 'Swimming Pool' },
-        { key: 'garden', label: 'Garden/Backyard' },
         { key: 'pspace', label: 'Parking Space' },
         { key: 'restaurant', label: 'Restaurant/Bar' },
         { key: 'venue', label: 'Entertainment Venue' },

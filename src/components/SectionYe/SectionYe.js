@@ -13,42 +13,42 @@ const SectionYe = props => {
   return (
     <div className={classes}>
       <div className={css.title}>
-        <FormattedMessage id="SectionHowItWorks.titleLineOne" />
+        <FormattedMessage id="SectionYe.titleLineOne" />
         <br />
-        <FormattedMessage id="SectionHowItWorks.titleLineTwo" />
+        <FormattedMessage id="SectionYe.titleLineTwo" />
       </div>
 
       <div className={css.steps}>
         <div className={css.step}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part1Title" />
+            <FormattedMessage id="SectionYe.part1Title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHowItWorks.part1Text" />
+            <FormattedMessage id="SectionYe.part1Text" />
           </p>
         </div>
 
         <div className={css.step}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part2Title" />
+            <FormattedMessage id="SectionYe.part2Title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHowItWorks.part2Text" />
+            <FormattedMessage id="SectionYe.part2Text" />
           </p>
         </div>
 
         <div className={css.step}>
           <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part3Title" />
+            <FormattedMessage id="SectionYe.part3Title" />
           </h2>
           <p>
-            <FormattedMessage id="SectionHowItWorks.part3Text" />
+            <FormattedMessage id="SectionYe.part3Text" />
           </p>
         </div>
       </div>
       <div className={css.createListingLink}>
         <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>
-          <FormattedMessage id="SectionHowItWorks.createListingLink" />
+          <FormattedMessage id="SectionYe.createListingLink" />
         </OwnListingLink>
       </div>
     </div>
