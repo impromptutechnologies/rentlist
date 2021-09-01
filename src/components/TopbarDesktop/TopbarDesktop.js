@@ -77,13 +77,8 @@ const TopbarDesktop = props => {
     return currentPage === page || isAccountSettingsPage ? css.currentPage : null;
   };
 
-  const profileMenu = authenticatedOnClientSide ? (
-    <Menu>
-      <MenuLabel className={css.profileMenuLabel} isOpenClassName={css.profileMenuIsOpen}>
-        <Avatar className={css.avatar} user={currentUser} disableProfileLink />
-      </MenuLabel>
-      <MenuContent className={css.profileMenuContent}>
-        <MenuItem key="EditListingPage">
+  /*
+  <MenuItem key="EditListingPage">
           <OwnListingLink
             listing={currentUserListing}
             listingFetched={currentUserListingFetched}
@@ -98,7 +93,15 @@ const TopbarDesktop = props => {
               )}
             </div>
           </OwnListingLink>
-        </MenuItem>
+        </MenuItem>*/
+
+  const profileMenu = authenticatedOnClientSide ? (
+    <Menu>
+      <MenuLabel className={css.profileMenuLabel} isOpenClassName={css.profileMenuIsOpen}>
+        <Avatar className={css.avatar} user={currentUser} disableProfileLink />
+      </MenuLabel>
+      <MenuContent className={css.profileMenuContent}>
+      
 
         <MenuItem key="EditListingPage">
           <NamedLink
