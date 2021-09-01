@@ -91,7 +91,7 @@ export const filters = [
     // You can turn on/off ordering by distance from config.js file.
     config: {},
   },
-  {
+  /*{
     id: 'yogaStyles',
     label: 'Yoga styles',
     type: 'SelectSingleFilter',
@@ -115,7 +115,7 @@ export const filters = [
         { key: 'yin', label: 'Yin' },
       ],
     },
-  },
+  },*/
   {
     id: 'category',
     label: 'category',
