@@ -95,7 +95,7 @@
 
 .sectionContentInitial {
   composes: sectionContent;
-  margin-top:0;
+  margin-top:50px;
 }
 
 /* A bar on top of light sections */

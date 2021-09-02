@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { FormattedMessage } from '../../util/reactIntl';
 import { propTypes } from '../../util/types';
 import { OwnListingLink } from '../../components';
+import { NamedLink } from '..';
 
 import css from './SectionHowItWorks.module.css';
 
@@ -45,6 +46,14 @@ const SectionTwoSided = props => {
             <FormattedMessage id="SectionHowItWorks.part3Text" />
           </p>
         </div>
+      </div>
+      <div>
+      <NamedLink
+          name="AbouthostguestPage"
+          className={css.heroButton}
+        >
+          <FormattedMessage id="SectionYe.button" />
+        </NamedLink>
       </div>
       <div className={css.createListingLink}>
         <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>

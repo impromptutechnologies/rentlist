@@ -12,6 +12,7 @@ import {
   SectionHero,
   SectionHowItWorks,
   SectionLocations,
+  SectionCategories,
   SectionYe,
   LayoutSingleColumn,
   LayoutWrapperTopbar,
@@ -71,6 +72,7 @@ export const LandingPageComponent = props => {
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
           <ul className={css.sections}>
+          
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
                 <SectionLocations />
@@ -83,11 +85,10 @@ export const LandingPageComponent = props => {
                 <SectionHowItWorks
                   currentUserListing={currentUserListing}
                   currentUserListingFetched={currentUserListingFetched}
-                />
-                
-                
+                />  
               </div>
             </li>
+            
             <li className={css.section}>
               <div className={css.sectionContentInitial}>
                 <SectionYe
@@ -95,6 +96,12 @@ export const LandingPageComponent = props => {
                   currentUserListingFetched={currentUserListingFetched}
                 />
               </div>
+            </li>
+            <li className={css.section}>
+              <div className={css.sectionContentFirstChild}>
+                <SectionCategories />
+              </div>
+
             </li>
           </ul>
         </LayoutWrapperMain>

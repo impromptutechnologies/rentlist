@@ -99,7 +99,7 @@ const canonicalRootURL = process.env.REACT_APP_CANONICAL_ROOT_URL;
 const siteTitle = 'Rentlist';
 
 // Twitter handle is needed in meta tags (twitter:site). Start it with '@' character
-const siteTwitterHandle = '@sharetribe';
+const siteTwitterHandle = '@rentlistorg';
 
 // Instagram page is used in SEO schema (http://schema.org/Organization)
 const siteInstagramPage = null;

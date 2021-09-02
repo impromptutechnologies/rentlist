@@ -5,6 +5,54 @@
   margin-top: 0;
 }
 
+@keyframes animationTitle {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/* Shared animation rules */
+.animation {
+  animation-name: animationTitle;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+
+  visibility: hidden;
+  opacity: 1;
+  position: relative;
+}
+
+.heroButton {
+  @apply --marketplaceButtonStyles;
+  margin-top:20px;
+  composes: animation;
+
+  animation-delay: 0.8s;
+
+  @media (--viewportMedium) {
+    display: block;
+    width: 260px;
+  }
+}
+
+.button{
+  width: 160px;
+  background-color: var(--marketplaceColor);
+  color: var(--matterColorLight);
+  border:none;
+  min-height: 65px;
+  font-weight: var(--fontWeightSemiBold);
+  margin-top:15px;
+}
+
 .steps {
   display: flex;
   flex-direction: column;

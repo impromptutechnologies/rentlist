@@ -35,6 +35,10 @@
   padding: calc((var(--topbarHeight) - var(--Topbar_logoHeight)) / 2) 24px;
 }
 
+.home img{
+  height:50px
+}
+
 .logoutButton {
   margin: 0;
 }

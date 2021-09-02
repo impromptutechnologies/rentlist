@@ -94,15 +94,11 @@ const Footer = props => {
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
-                  <NamedLink name="LandingPage" className={css.link}>
+                  <NamedLink name="FAQPage" className={css.link}>
                     <FormattedMessage id="Footer.toFAQPage" />
                   </NamedLink>
                 </li>
-                <li className={css.listItem}>
-                  <NamedLink name="LandingPage" className={css.link}>
-                    <FormattedMessage id="Footer.toHelpPage" />
-                  </NamedLink>
-                </li>
+                
                 <li className={css.listItem}>
                   <NamedLink name="AboutPage" to={{ hash: '#contact' }} className={css.link}>
                     <FormattedMessage id="Footer.toContactPage" />
@@ -287,3 +283,11 @@ Footer.propTypes = {
 };
 
 export default injectIntl(Footer);
+
+
+/*
+<li className={css.listItem}>
+                  <NamedLink name="LandingPage" className={css.link}>
+                    <FormattedMessage id="Footer.toHelpPage" />
+                  </NamedLink>
+                </li>*/
