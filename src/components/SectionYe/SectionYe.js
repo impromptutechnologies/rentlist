@@ -56,11 +56,7 @@ const SectionYe = props => {
         </NamedLink>
       </div>
       
-      <div className={css.createListingLink}>
-        <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>
-          <FormattedMessage id="SectionYe.createListingLink" />
-        </OwnListingLink>
-      </div>
+ 
     </div>
       
   );

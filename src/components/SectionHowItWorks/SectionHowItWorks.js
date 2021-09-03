@@ -55,11 +55,7 @@ const SectionTwoSided = props => {
           <FormattedMessage id="SectionYe.button" />
         </NamedLink>
       </div>
-      <div className={css.createListingLink}>
-        <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>
-          <FormattedMessage id="SectionHowItWorks.createListingLink" />
-        </OwnListingLink>
-      </div>
+     
     </div>
   );
 };
