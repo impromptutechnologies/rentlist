@@ -33,6 +33,7 @@
 .heroButton {
   @apply --marketplaceButtonStyles;
   margin-top:20px;
+  border-radius: 30px;
   composes: animation;
 
   animation-delay: 0.8s;

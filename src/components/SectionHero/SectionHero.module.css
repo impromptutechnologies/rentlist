@@ -89,7 +89,7 @@
 .heroButton {
   @apply --marketplaceButtonStyles;
   composes: animation;
-
+  border-radius: 30px;
   animation-delay: 0.8s;
 
   @media (--viewportMedium) {

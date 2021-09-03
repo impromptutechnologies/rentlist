@@ -6,7 +6,7 @@ import { propTypes } from '../../util/types';
 import { OwnListingLink } from '../../components';
 import { NamedLink } from '..';
 
-import css from './SectionHowItWorks.module.css';
+import css from './SectionHelp.module.css';
 
 const SectionYe = props => {
   const { rootClassName, className, currentUserListing, currentUserListingFetched } = props;
@@ -14,12 +14,60 @@ const SectionYe = props => {
   return (
     <div className={classes}>
       <div className={css.title}>
-        <FormattedMessage id="SectionYe.titleLineOne" />
         <br />
         <FormattedMessage id="SectionYe.titleLineTwo" />
       </div>
+      <div className={css.sectionContact}>
+      
+      
+      <div className={css.contactdiv}>
+        <h1 className={css.titlee}>We Can Help</h1>
+        <p>Our support team is available 24/7 to assist with any concerns. Ask Away :)</p>
+        <NamedLink
+          name="AboutPage"
+          className={css.heroLink}
+        >
+          <FormattedMessage id="SectionHelp.faq" />
+        </NamedLink>
+        <NamedLink
+          name="AboutPage"
+          className={css.heroButton}
+        >
+          <FormattedMessage id="SectionHelp.button1" />
+        </NamedLink>
+      </div>
+      </div>
+      
+      
+      
+      <div className={css.createListingLink}>
+        <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>
+          <FormattedMessage id="SectionYe.createListingLink" />
+        </OwnListingLink>
+      </div>
+    </div>
+      
+  );
+};
 
-      <div className={css.steps}>
+SectionYe.defaultProps = {
+  rootClassName: null,
+  className: null,
+  currentUserListing: null,
+  currentUserListingFetched: false,
+};
+
+SectionYe.propTypes = {
+  rootClassName: string,
+  className: string,
+  currentUserListing: propTypes.ownListing,
+  currentUserListingFetched: bool,
+};
+
+export default SectionYe;
+
+
+/*<div className={css.steps}>
         <div className={css.step}>
           <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionYe.part1Title" />
@@ -54,30 +102,4 @@ const SectionYe = props => {
         >
           <FormattedMessage id="SectionYe.button1" />
         </NamedLink>
-      </div>
-      
-      <div className={css.createListingLink}>
-        <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>
-          <FormattedMessage id="SectionYe.createListingLink" />
-        </OwnListingLink>
-      </div>
-    </div>
-      
-  );
-};
-
-SectionYe.defaultProps = {
-  rootClassName: null,
-  className: null,
-  currentUserListing: null,
-  currentUserListingFetched: false,
-};
-
-SectionYe.propTypes = {
-  rootClassName: string,
-  className: string,
-  currentUserListing: propTypes.ownListing,
-  currentUserListingFetched: bool,
-};
-
-export default SectionYe;
+      </div>*/

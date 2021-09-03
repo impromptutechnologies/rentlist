@@ -43,7 +43,7 @@ const FAQPage = () => {
             <div className={css.contentMain}>
 
 
-              <h3 className={css.subtitle}>Are you a yoga teacher?</h3>
+              <h3 className={css.subtitle}>Find a space catered to your needs.</h3>
 
               <p>
                 Rentlist offers you a platform through which you can reach thousands of yoga
@@ -52,7 +52,7 @@ const FAQPage = () => {
                 regular classes.
               </p>
 
-              <h3 className={css.subtitle}>Are you a yoga teacher?</h3>
+              <h3 className={css.subtitle}>Passive income via your unused space.</h3>
 
               <p>
                 Rentlist offers you a platform through which you can reach thousands of yoga
@@ -61,14 +61,6 @@ const FAQPage = () => {
                 regular classes.
               </p>
 
-              <h3 className={css.subtitle}>Are you a yoga teacher?</h3>
-
-              <p>
-                Rentlist offers you a platform through which you can reach thousands of yoga
-                practitioners. Offering private yoga classes through Rentlist offers you a
-                possibility to grow your customer base and earn some extra income on top of your
-                regular classes.
-              </p>
               <p>
                 You can also checkout our{' '}
                 <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}

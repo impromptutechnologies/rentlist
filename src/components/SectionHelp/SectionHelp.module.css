@@ -3,6 +3,12 @@
 .title {
   @apply --marketplaceH1FontStyles;
   margin-top: 0;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+
+.sectionContact{
+  display: flex;
 }
 
 @keyframes animationTitle {
@@ -34,13 +40,97 @@
   @apply --marketplaceButtonStyles;
   margin-top:20px;
   composes: animation;
-  border-radius: 30px;
+  margin-top: 50px;
   animation-delay: 0.8s;
 
   @media (--viewportMedium) {
     display: block;
     width: 260px;
   }
+}
+.contactdiv{
+  height: 400px;
+  width:100%;
+  border-radius:10px;
+  background-color: var(--marketplaceColor);
+  padding:10px;
+  padding-left:35px;
+}
+.contactdiv h1{
+  color:white;
+}
+.contactdiv p{
+  color:white;
+}
+.contactdiv1{
+  height: 600px;
+  width:70%;
+  border-radius:10px;
+  background-color:none;
+  padding:10px;
+  padding-left:35px;
+}
+.contactdiv1 h1{
+  color:black;
+}
+
+.contactdiv1 p{
+  color:black;
+}
+
+.questiontitle{
+  color:black;
+  margin-top:15px
+}
+@keyframes animationTitle {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    top: -20px;
+    
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/* Shared animation rules */
+.animation {
+  animation-name: animationTitle;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+
+  visibility: hidden;
+  opacity: 1;
+  position: relative;
+}
+.titlee{
+  margin-top:60px
+}
+
+.heroButton {
+  @apply --marketplaceButtonStyles;
+  margin-top:30px;
+  composes: animation;
+
+  animation-delay: 0.8s;
+  background-color:#036aa7;
+  width: 200px;
+
+  @media (--viewportMedium) {
+    display: block;
+    width: 260px;
+    margin-top:30px;
+    background-color:#036aa7
+  }
+}
+
+.heroLink{
+  color:white;
+  text-decoration: underline;
 }
 
 .button{
@@ -51,7 +141,6 @@
   min-height: 65px;
   font-weight: var(--fontWeightSemiBold);
   margin-top:15px;
-
 }
 
 .steps {
