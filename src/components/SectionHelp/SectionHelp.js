@@ -24,7 +24,7 @@ const SectionYe = props => {
         <h1 className={css.titlee}>We Can Help</h1>
         <p>Our support team is available 24/7 to assist with any concerns. Ask Away :)</p>
         <NamedLink
-          name="AboutPage"
+          name="FAQPage"
           className={css.heroLink}
         >
           <FormattedMessage id="SectionHelp.faq" />
