@@ -72,7 +72,7 @@
     margin-bottom: 12px;
 
     @media (--viewportMedium) {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 32px;
       /* margin-top + n * line-height + margin-bottom => x * 8px */
       margin-top: 16px;
@@ -156,7 +156,7 @@
     margin-bottom: 18px;
 
     @media (--viewportMedium) {
-      font-size: 30px;
+      font-size: 23px;
       font-weight: 400;
       line-height: 48px;
       letter-spacing: -1px;
@@ -168,7 +168,7 @@
 
   --marketplaceH2FontStyles: {
     font-weight: var(--fontWeightSemiBold);
-    font-size: 17px;
+    font-size: 15px;
     line-height: 24px;
     /* margin-top + n * line-height + margin-bottom => x * 6px */
     margin-top: 21px;
@@ -388,7 +388,7 @@
   --marketplaceButtonFontStyles: {
     font-family: 'poppins', Helvetica, Arial, sans-serif;
     font-weight: var(--fontWeightSemiBold);
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.2px;
 

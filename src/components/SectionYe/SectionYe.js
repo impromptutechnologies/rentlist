@@ -5,6 +5,9 @@ import { FormattedMessage } from '../../util/reactIntl';
 import { propTypes } from '../../util/types';
 import { OwnListingLink } from '../../components';
 import { NamedLink } from '..';
+import acceptedImage from './accepted.svg';
+import photoImage from './photo.svg';
+import salaryImage from './salary.svg';
 
 import css from './SectionHowItWorks.module.css';
 
@@ -21,6 +24,7 @@ const SectionYe = props => {
 
       <div className={css.steps}>
         <div className={css.step}>
+        <img className={css.logimg} src={photoImage} />
           <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionYe.part1Title" />
           </h2>
@@ -30,6 +34,7 @@ const SectionYe = props => {
         </div>
 
         <div className={css.step}>
+        <img className={css.logimg} src={acceptedImage} />
           <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionYe.part2Title" />
           </h2>
@@ -39,6 +44,7 @@ const SectionYe = props => {
         </div>
 
         <div className={css.step}>
+        <img className={css.logimg} src={salaryImage} />
           <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionYe.part3Title" />
           </h2>

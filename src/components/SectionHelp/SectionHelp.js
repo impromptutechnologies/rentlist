@@ -5,7 +5,7 @@ import { FormattedMessage } from '../../util/reactIntl';
 import { propTypes } from '../../util/types';
 import { OwnListingLink } from '../../components';
 import { NamedLink } from '..';
-
+import acceptedImage from './heart.svg'
 import css from './SectionHelp.module.css';
 
 /*<div className={css.createListingLink}>
@@ -26,7 +26,7 @@ const SectionYe = props => {
       
       
       <div className={css.contactdiv}>
-        <h1 className={css.titlee}>We Can Help</h1>
+        <h1 className={css.titlee}>We Can Help <img className={css.logimg} src={acceptedImage} /></h1>
         <p>Our support team is available 24/7 to assist with any concerns. Ask Away :)</p>
         <NamedLink
           name="FAQPage"

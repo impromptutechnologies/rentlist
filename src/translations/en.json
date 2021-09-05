@@ -1067,6 +1067,8 @@
   "TopbarDesktop.logout": "Log out",
   "TopbarDesktop.profileSettingsLink": "User profile",
   "TopbarDesktop.signup": "Sign up",
+  "TopbarDesktop.about": "About",
+  "TopbarDesktop.contact": "Contact",
   "TopbarDesktop.viewListing": "Check Listings",
   "TopbarMobileMenu.accountSettingsLink": "Account settings",
   "TopbarMobileMenu.greeting": "Hello {displayName}",

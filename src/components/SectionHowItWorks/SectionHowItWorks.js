@@ -5,6 +5,11 @@ import { FormattedMessage } from '../../util/reactIntl';
 import { propTypes } from '../../util/types';
 import { OwnListingLink } from '../../components';
 import { NamedLink } from '..';
+import confettiImage from './confetti.svg';
+import loupeImage from './loupe.svg';
+
+import snapImage from './snap.svg';
+
 
 import css from './SectionHowItWorks.module.css';
 
@@ -21,6 +26,7 @@ const SectionTwoSided = props => {
 
       <div className={css.steps}>
         <div className={css.step}>
+          <img className={css.logimg} src={loupeImage} />
           <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionHowItWorks.part1Title" />
           </h2>
@@ -30,6 +36,7 @@ const SectionTwoSided = props => {
         </div>
 
         <div className={css.step}>
+          <img className={css.logimg} src={snapImage} />
           <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionHowItWorks.part2Title" />
           </h2>
@@ -39,6 +46,7 @@ const SectionTwoSided = props => {
         </div>
 
         <div className={css.step}>
+          <img className={css.logimg} src={confettiImage} />
           <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionHowItWorks.part3Title" />
           </h2>
@@ -48,14 +56,10 @@ const SectionTwoSided = props => {
         </div>
       </div>
       <div>
-      <NamedLink
-          name="AbouthostguestPage"
-          className={css.heroButton}
-        >
+        <NamedLink name="AbouthostguestPage" className={css.heroButton}>
           <FormattedMessage id="SectionYe.button" />
         </NamedLink>
       </div>
-     
     </div>
   );
 };

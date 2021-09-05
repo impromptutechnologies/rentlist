@@ -149,6 +149,22 @@ const TopbarDesktop = props => {
     </NamedLink>
   );
 
+  const contactLink = isAuthenticatedOrJustHydrated ? null : (
+    <NamedLink name="AboutPage" className={css.signupLink}>
+      <span className={css.signup}>
+        <FormattedMessage id="TopbarDesktop.contact" />
+      </span>
+    </NamedLink>
+  );
+
+  const aboutLink = isAuthenticatedOrJustHydrated ? null : (
+    <NamedLink name="AboutPage" className={css.signupLink}>
+      <span className={css.signup}>
+        <FormattedMessage id="TopbarDesktop.about" />
+      </span>
+    </NamedLink>
+  );
+
   const loginLink = isAuthenticatedOrJustHydrated ? null : (
     <NamedLink name="LoginPage" className={css.loginLink}>
       <span className={css.login}>
@@ -193,6 +209,8 @@ const TopbarDesktop = props => {
       {createListingLink}
       {inboxLink}
       {profileMenu}
+      {aboutLink}
+      {contactLink}
       {signupLink}
       {loginLink}
     </nav>

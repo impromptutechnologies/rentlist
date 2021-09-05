@@ -32,13 +32,13 @@
   height: 100%;
 
   @media (--viewportLarge) {
-    padding: 12px 36px 21px 36px;
+    padding: 19px 36px 21px 36px;
   }
 }
 
 .logo {
   /* If height is increased, change link paddings accordingly */
-  height: 45px;
+  height: 40px;
 
   /* Good aspect ratio should be less than 160/27 (width/height) */
   /* NOTE: extremely wide logos, need special handling. */

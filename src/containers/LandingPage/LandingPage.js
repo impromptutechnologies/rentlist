@@ -65,10 +65,11 @@ export const LandingPageComponent = props => {
       }}
     >
       <LayoutSingleColumn>
+        
+        <LayoutWrapperMain>
         <LayoutWrapperTopbar>
           <TopbarContainer />
         </LayoutWrapperTopbar>
-        <LayoutWrapperMain>
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
