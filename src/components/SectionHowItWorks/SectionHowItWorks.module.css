@@ -3,6 +3,8 @@
 .title {
   @apply --marketplaceH1FontStyles;
   margin-top: 0;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 @keyframes animationTitle {

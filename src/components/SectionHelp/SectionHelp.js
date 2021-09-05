@@ -8,6 +8,11 @@ import { NamedLink } from '..';
 
 import css from './SectionHelp.module.css';
 
+/*<div className={css.createListingLink}>
+        <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>
+          <FormattedMessage id="SectionYe.createListingLink" />
+        </OwnListingLink>
+      </div>*/
 const SectionYe = props => {
   const { rootClassName, className, currentUserListing, currentUserListingFetched } = props;
   const classes = classNames(rootClassName || css.root, className);
@@ -40,11 +45,7 @@ const SectionYe = props => {
       
       
       
-      <div className={css.createListingLink}>
-        <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>
-          <FormattedMessage id="SectionYe.createListingLink" />
-        </OwnListingLink>
-      </div>
+      
     </div>
       
   );

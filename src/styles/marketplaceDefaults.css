@@ -17,7 +17,8 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #088ce4;
+  --marketplaceColor: #104797
+  ;
   --marketplaceColorLight: #00bfe6;
   --marketplaceColorDark: #006a80;
 
@@ -217,6 +218,7 @@ li {
 p,
 pre {
   @apply --marketplaceBodyFontStyles;
+  font-weight: 300;
 }
 
 /* ================ Normalisations ================ */

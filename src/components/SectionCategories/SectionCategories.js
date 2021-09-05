@@ -12,6 +12,9 @@ import nyImage from './images/1.jpg';
 import laImage from './images/2.jpg';
 import sfImage from './images/3.jpg';
 
+/*<div className={css.title}>
+        <FormattedMessage id="SectionCategories.title" />
+      </div>*/
 class LocationImage extends Component {
   render() {
     const { alt, ...rest } = this.props;
@@ -50,9 +53,7 @@ const SectionCategories = props => {
 
   return (
     <div className={classes}>
-      <div className={css.title}>
-        <FormattedMessage id="SectionCategories.title" />
-      </div>
+      
       <div className={css.locations}>
         {locationLink(
           'Garden/Backyard',
