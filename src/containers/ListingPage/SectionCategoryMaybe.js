@@ -26,7 +26,7 @@ const SectionCategoryMaybe = props => {
       <h2>
         <FormattedMessage
           id="ListingPage.categoryType"
-          values={{ category: optionLabel.toLowerCase() }}
+          values={{ category: optionLabel }}
         />
       </h2>
     </div>

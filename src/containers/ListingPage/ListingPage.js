@@ -390,6 +390,8 @@ export class ListingPageComponent extends Component {
       //                  <SectionFeaturesMaybe options={yogaStylesOptions} publicData={publicData} />
 
     //const certificateOptions = findOptionsForSelectFilter('certificate', filterConfig);
+    //                <SectionAvatar user={currentAuthor} params={params} />
+
 
     return (
       <Page
@@ -428,7 +430,6 @@ export class ListingPageComponent extends Component {
                 onManageDisableScrolling={onManageDisableScrolling}
               />
               <div className={css.contentContainer}>
-                <SectionAvatar user={currentAuthor} params={params} />
                 <div className={css.mainContent}>
                   <SectionHeading
                     priceTitle={priceTitle}

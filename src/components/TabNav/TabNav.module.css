@@ -21,6 +21,7 @@
 .link {
   display: inline-block;
   white-space: nowrap;
+  font-weight: 600;
 
   /* Font */
   @apply --marketplaceTabNavFontStyles;
@@ -46,6 +47,7 @@
   }
 
   @media (--viewportLarge) {
+    font-weight: 600;
     width: var(--TabNav_linkWidth);
     border-bottom-width: 0px;
     margin-top: 0;

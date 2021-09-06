@@ -49,7 +49,7 @@
 
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;
-  --fontWeightSemiBold: 600;
+  --fontWeightSemiBold: 500;
   --fontWeightBold: 700;
 
   --fontWeightHighlightEmail: var(--fontWeightBold);

@@ -71,6 +71,24 @@ const TopbarDesktop = props => {
     </NamedLink>
   ) : null;
 
+
+  const searchLink = authenticatedOnClientSide ? (
+    <NamedLink
+      className={css.inboxLink}
+      name="SearchPage"
+      to={{
+        search:
+          'address=United%20States%20of%20America&bounds=71.540724%2C-66.885444%2C18.765563%2C-179.9',
+      }}
+      //params={{ tab: currentUserHasListings ? 'sales' : 'orders' }}
+    >
+      <span className={css.inbox}>
+        <FormattedMessage id="TopbarDesktop.search" />
+        {notificationDot}
+      </span>
+    </NamedLink>
+  ) : null;
+
   const currentPageClass = page => {
     const isAccountSettingsPage =
       page === 'AccountSettingsPage' && ACCOUNT_SETTINGS_PAGES.includes(currentPage);
@@ -207,6 +225,7 @@ const TopbarDesktop = props => {
       {search}
       {listingLink}
       {createListingLink}
+      {searchLink}
       {inboxLink}
       {profileMenu}
       {aboutLink}
